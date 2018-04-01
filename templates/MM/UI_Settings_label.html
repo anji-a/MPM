@@ -1,0 +1,35 @@
+<form method="POST" id='label_settings_form' action="/UIInclude">
+	<div id="label_options" class="panel-group">
+    <div class="panel panel-default">
+	<div class="panel-heading">
+		<h4 class="panel-title">
+			<a data-toggle="collapse" data-parent="#label_options" href="#label_PropertyPanel">Property Panel</a>
+
+		</h4>
+	</div>
+
+	<div id="label_PropertyPanel" class="panel-collapse collapse">
+		<input name="id" value={{id}} hidden/>
+		<!--<input name="response" value={{response}} hidden/>-->
+        <input name="UIElement" value={{UIElement}} hidden/>
+	    <label >Property: <input type="text" name='label_property_property' data-type="Propery" value="{{label_property_property}}"></label><br>
+		<label >Class: <input type="text" name='label_property_class' data-type="Class" value="{{label_property_class}}"></label><br>
+		<label >Style: <input type="text" name='label_property_style' data-type="Style" value="{{label_property_style}}"></label><br>
+	</div>
+	</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+			<h4 class="panel-title">
+			<a data-toggle="collapse" data-parent="#label_options" href="#label_ColumnPanel">Column Panel</a>
+			</h4>
+			</div>
+			<div id="label_ColumnPanel" class="panel-collapse collapse">
+	    <label >Class: <input type="text" name='column_class' data-type="Class" value="{{column_class}}"></label><br>
+		<label >Style: <input type="text" name='column_style' data-type="Style" value="{{column_style}}"></label><br>
+	</div>
+		</div>
+
+        <input type="submit" value="Save" class="btn btn-primary">
+</div>
+
+</form>

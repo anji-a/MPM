@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to MPM</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--<script src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>-->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="{% static "js/Portal.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/contextMenuplugin.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/app.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/tabs.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/resizeable.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/contextmenujs.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/HTMLStreaming.js" %}"></script>
+
+    <link rel="stylesheet" href="{% static "css/Portal.css" %}" >
+
+    <link rel="stylesheet" href="{% static "css/contextMenu.css" %}" >
+
+
+</head>
+<body>
+    <section>
+        <div>
+            {% include "MM/header_MPM.html" %}
+        </div>
+    </section>
+    <section class="fit100">
+        <div class="fit100">
+            {% include "MM/workspace_MPM.html" %}
+        </div>
+    </section>
+
+</body>
+</html>

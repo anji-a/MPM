@@ -1,0 +1,35 @@
+<form method="POST" id='new_form' action="/standardFunc">
+
+<div class="container-fluid jumbotron" data-controlset='{"controlType": "layout", "UIElement": "MM/UI_Settings_layout.html", "id": "layout_vh479kbb8", "layout_class": "container-fluid jumbotron", "layout_style": ""}' data-edit="regenerate" data-select="layout" id="layout_vh479kbb8" style="">
+   <div class="row" data-layout="row" id="row_7g0s4em40">
+    <div class="col-md-12" style="text-align:center">
+     <label class="" style="">
+      {{ "Create New UI Element" }}
+     </label>
+    </div>
+    <div class="col-md-12" style="height:20px;">
+    </div>
+    <div class="col-md-6" style="text-align:center">
+     <label class="" for="appName" style="">
+      {{ "Enter App Name:" }}
+      <input class="" name="appName" style="" value="{{appName}}"/>
+     </label>
+    </div>
+    <div class="col-md-6" style="text-align:center">
+     <label class="" for="uiElementName" style="">
+      {{ "Enter UI Element Name:" }}
+      <input class="" name="uiElementName" style="" value="{{uiElementName}}"/>
+     </label>
+    </div>
+    <div class="col-md-12" style="height:20px;">
+    </div>
+    <div class="col-md-12" style="text-align:center">
+        <input name="fun_name" value="createNewElement" hidden/>
+        <input name="datalocation" value="workTabs" hidden/>
+     <input class="" data-onclick="createNewElement" style="" type="submit" value="Create"/>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+    </form>

@@ -1,0 +1,23 @@
+<form method="POST" id='label_settings_form' action="/UIInclude">
+	<div id="input_options" class="panel-group">
+    <div class="panel panel-default">
+	</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+			<h4 class="panel-title">
+			<a data-toggle="collapse" data-parent="#input_options" href="#label_ColumnPanel">Layout Panel</a>
+			</h4>
+			</div>
+			<div id="label_ColumnPanel" class="panel-collapse collapse">
+        <input name="id" value={{id}} hidden/>
+		<!--<input name="response" value={{response}} hidden/>-->
+        <input name="UIElement" value={{UIElement}} hidden/>
+	    <label >Class: <input type="text" name='layout_class' data-type="Class" value="{{layout_class}}"></label><br>
+		<label >Style: <input type="text" name='layout_style' data-type="Style" value="{{layout_style}}"></label><br>
+	</div>
+		</div>
+
+        <input type="submit" value="Save" class="btn btn-primary">
+</div>
+
+</form>
